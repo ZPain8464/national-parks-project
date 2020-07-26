@@ -1,3 +1,5 @@
+'use strict'
+
 const apiKey = "6G0iq4Q381g35m3I28FEoP3stft3IBGErxaiW7gs"
 
 const searchURL = "https://developer.nps.gov/api/v1/parks"
@@ -32,7 +34,7 @@ function formatQueryParams(params) {
 function getParksResults(query, limit) {
     const params = {
         limit,
-        q: query,
+        stateCode: query,
         api_key: apiKey,
     };
     const queryString = formatQueryParams(params);
