@@ -57,7 +57,7 @@ function watchForm() {
     console.log('watchForm ran')
     $('#js-form').submit(event => {
         event.preventDefault();
-        $('#results-list').empty();
+        $('#park-results').empty();
         const searchTerms = $('#js-desired-states').val();
         const maxResults = $('#js-max-results').val();
         console.log(searchTerms);
